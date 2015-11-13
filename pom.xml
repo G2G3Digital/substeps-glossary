@@ -27,9 +27,9 @@
             <distribution>manual</distribution>
       </license>
     </licenses>
-    
+
     <developers>
-   
+
         <developer>
           <id>ianmoore</id>
           <name>Ian Moore</name>
@@ -44,7 +44,7 @@
           <id>rickybarefield</id>
           <name>Ricky Barefield</name>
           <organization>Technophobia</organization>
-          <roles> 
+          <roles>
             <role>developer</role>
           </roles>
         </developer>
@@ -58,23 +58,23 @@
 		<mockito.version>1.9.0-rc1</mockito.version>
 		<maven.version>2.2.1</maven.version>
 
-		<substeps.version>1.1.2</substeps.version>
-		<substeps.api.version>1.1.2</substeps.api.version>
-		
+		<substeps.version>1.1.3</substeps.version>
+		<substeps.api.version>1.1.3</substeps.api.version>
+
         <xstream.version>1.4.2</xstream.version>
-        <!--  
-        
-        THESE PROPERTIES NEED TO BE DEFINED IN AN ACTIVE PROFILE IN SETTINGS.XML 
-        
+        <!--
+
+        THESE PROPERTIES NEED TO BE DEFINED IN AN ACTIVE PROFILE IN SETTINGS.XML
+
         <substeps-glossary.scm>scm:git:git://github.com/${your username}/substeps-glossary.git<substeps-glossary.scm>
         <substeps-glossary.scm.url> <substeps-glossary.scm.url>
-        
+
 		<nexus.snapshot.artifacts>internalsnapshots</nexus.snapshot.artifacts>
 		<nexus.release.artifacts>internalreleases</nexus.release.artifacts>
-        
+
           <nexus.snapshot.url>http://someserver.com/${nexus.snapshot.artifacts}/</nexus.snapshot.url>
         <nexus.releases.url>http://someserver.com/${nexus.release.artifacts}/</nexus.releases.url>
-        
+
         -->
 	</properties>
 
@@ -112,11 +112,11 @@
 	</build>
 
    <profiles>
-        
-        <!-- A profile used by default for internal dev, using the repos set up in proeprties defined above, rather than the OSS nexus repos -->    
+
+        <!-- A profile used by default for internal dev, using the repos set up in proeprties defined above, rather than the OSS nexus repos -->
         <profile>
             <id>internalDev</id>
-             
+
             <distributionManagement>
                 <snapshotRepository>
                     <id>${nexus.snapshot.artifacts}</id>
@@ -130,7 +130,7 @@
                     <url>${nexus.releases.url}</url>
                 </repository>
             </distributionManagement>
-            
+
         </profile>
     </profiles>
 
@@ -248,7 +248,7 @@
 	</dependencies>
 
     <scm>
-        
+
         <connection>${substeps-glossary.scm}</connection>
         <developerConnection>${substeps-glossary.scm}</developerConnection>
         <url>${substeps-glossary.scm.url}</url>
