@@ -1,8 +1,17 @@
-substeps-glossary [![Build Status](https://travis-ci.org/G2G3Digital/substeps-glossary.svg)](https://travis-ci.org/G2G3Digital/substeps-glossary)
+[DEPRECATED] substeps-glossary [![Build Status](https://travis-ci.org/G2G3Digital/substeps-glossary.svg)](https://travis-ci.org/G2G3Digital/substeps-glossary)
 =================
 
-Release Notes
-=============
+The substeps-api repository has been merged into one with other core Substep libraries. No more pull requests on the repository will be accepted.
+
+So the new home is [substeps-framework](https://github.com/G2G3Digital/substeps-framework) which now contains:
+ * substeps-api
+ * substeps-core
+ * substeps-runner
+ * substeps-glossary
+
+1.1.3
+-----
+* Version number bump
 
 1.1.1
 -----
